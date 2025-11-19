@@ -569,6 +569,13 @@ column-gap: .5rem;
   justify-content: center;
   text-align: center;
 }
+
+.reviews__comment::before{
+  content: open-quote;
+  position: absolute;
+  left: -1rem;
+  top: -5rem;
+}
 /* Swiper class */
 
 
