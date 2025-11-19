@@ -513,8 +513,64 @@ img {
 
 /*=============== REVIEWS ===============*/
 
+.reviews__container{
+  row-gap: 6rem;
+}
 
+.reviews__content{
+  display: grid;   /* for swiper*/
+}
+
+.reviews__swiper{
+  margin-inline: initial;
+  padding-bottom: 6rem;
+}
+
+.reviews__card{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.reviews__profile{
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: .5rem;
+}
+
+.reviews__phone{
+  width: 60px;
+  border-radius: 50%;
+}
+
+.reviews__data{
+  display: grid;
+  row-gap: .25rem;
+}
+
+.reviews__name,
+.reviews__nummber{
+  font-size: var(--h3-font-size);
+}
+
+.reviews__stars{
+  display: flex;
+  column-gap: .25rem;
+}
+
+.reviews__stars i{
+  font-size: 1rem;
+  content: var(--first-color);
+}
+
+.reviews__comment{
+  position: relative;
+  width: 280px;
+  justify-content: center;
+  text-align: center;
+}
 /* Swiper class */
+
 
 
 /*=============== APP ===============*/
