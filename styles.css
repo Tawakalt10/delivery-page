@@ -526,7 +526,7 @@ img {
   padding-bottom: 6rem;
 }
 
-.reviews__card{
+ .reviews__card{
   display: grid;
   row-gap: 1rem;
 }
@@ -538,7 +538,7 @@ align-items: center;
 column-gap: .5rem;
 }
 
-.reviews__phone{
+.reviews__photo{
   width: 60px;
   border-radius: 50%;
 }
@@ -553,6 +553,7 @@ column-gap: .5rem;
   font-size: var(--h3-font-size);
 }
 
+
 .reviews__stars{
   display: flex;
   column-gap: .25rem;
@@ -560,13 +561,13 @@ column-gap: .5rem;
 
 .reviews__stars i{
   font-size: 1rem;
-  content: var(--first-color);
+  color: var(--first-color);
 }
 
 .reviews__comment{
   position: relative;
   width: 280px;
-  justify-content: center;
+  justify-self: center;
   text-align: center;
 }
 
@@ -574,8 +575,44 @@ column-gap: .5rem;
   content: open-quote;
   position: absolute;
   left: -1rem;
-  top: -5rem;
+  top: -.5rem;
 }
+
+
+.reviews__comment::after{
+  content: close-quote;
+  position: absolute;
+  right: -1rem;
+  bottom: -2rem;
+}
+
+.reviews__comment::before,
+.reviews__comment::after{
+  font-size: 2.5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+}
+
+.reviews__image{
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: var(--gradient-color);
+  border-radius: 6rem;
+  justify-self: center;
+}
+
+.reviews__img{
+  width: 270px;
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  right: 0;
+  margin: 0 auto;
+  mask-image: linear-gradient(var(--first-color) 80%, transparent 95%);
+  filter: var((--shadow-img-big));
+  
+} */
 /* Swiper class */
 
 

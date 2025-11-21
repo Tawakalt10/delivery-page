@@ -35,3 +35,17 @@ const shadowHeader = () =>{
                     :header.classList.remove('shadow-header')
 }
   window.addEventListener('scroll', shadowHeader)
+
+
+  // SWIPER
+
+  const swiperReviews = new Swiper('.reviews__swiper', {
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
