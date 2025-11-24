@@ -37,15 +37,23 @@ const shadowHeader = () =>{
   window.addEventListener('scroll', shadowHeader)
 
 
-  // SWIPER
+  // SWIPER REVEALS
 
   const swiperReviews = new Swiper('.reviews__swiper', {
   loop: true,
+  spaceBetween :16,
+  grabCursor:true,
+  speed:600,
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  // autoplay: {
+  //   delay : 3000,
+  //   disableOnInteraction: false
+  // }
 
 });
