@@ -682,7 +682,62 @@ column-gap: .5rem;
 
 
 /*=============== MAP ===============*/
+.map__container{
+  row-gap: 3rem;
+  padding-bottom: 3rem ;
+}
 
+.map__area{
+  position: relative;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 6rem;
+  box-shadow: var(--shadow-small);
+  justify-self: center;
+
+}
+
+.map__content{
+  row-gap: 2rem;
+}
+
+.map__card{
+  text-align: center;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.map__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-size: var(--h3-font-size);
+}
+
+.map__title i{
+ font-size: 1.5rem;
+ font-weight: initial;
+ color: var(--first-color); 
+}
+
+.map__info{
+  font-style: initial;
+}
+
+.map__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform .4s;
+}
+
+.map__area:hover .map__img{
+  transform: translateX(-100%);
+}
 
 /*=============== FOOTER ===============*/
 
